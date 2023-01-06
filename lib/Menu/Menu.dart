@@ -27,21 +27,17 @@ class _MenuState extends State<Menu> {
                 const SizedBox(
                   height: 80,
                 ),
-                const Padding(
-                    padding: EdgeInsets.only(right: 285.0),
-                    child: Text(
-                      "George",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Oxygen',
-                          fontSize: 20),
-                    )),
+                const Text(
+                  "George",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Oxygen',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 const SizedBox(
                   height: 40,
-                ),
-                Container(
-                  child: Image.asset(
-                      "D:\Flutter Pro6jects\hybrid_chat\image\Profile.jpg"),
                 ),
               ],
             ),
