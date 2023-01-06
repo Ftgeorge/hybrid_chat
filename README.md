@@ -4,13 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project is a mobile chat application build i Flutter and firebase for the backend.
+It will have all the features of a chat application, starting from authentication in firebase
+to the process of connecting the applications backend and tests in postman. It is called Hybrid
+chat for now the name would be changed later on. It's open source and free to all. Hope it goes 
+well.  
