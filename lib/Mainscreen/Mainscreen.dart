@@ -38,55 +38,68 @@ class _MainScreenState extends State<MainScreen>
         controller: tabController,
         children: const [Menu()],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(
-              FeatherIcons.camera,
-              size: 30,
-            ),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              FeatherIcons.user,
-              size: 30,
-            ),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              FeatherIcons.messageCircle,
-              size: 30,
-            ),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              FeatherIcons.bell,
-              size: 30,
-            ),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              EvaIcons.menu2Outline,
-              size: 30,
-            ),
-            label: "",
-          ),
-        ],
-        unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.blue,
-        backgroundColor: Colors.black,
-        type: BottomNavigationBarType.fixed,
-        selectedLabelStyle: const TextStyle(
-          fontSize: 1,
-          fontFamily: 'Oxygen',
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30), topRight: Radius.circular(30)),
+          boxShadow: [
+            BoxShadow(color: Colors.black38, spreadRadius: 0, blurRadius: 10)
+          ],
         ),
-        showUnselectedLabels: true,
-        currentIndex: selectedIndex,
-        onTap: onItemClicked,
+        child: ClipRRect(
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30), topRight: Radius.circular(30)),
+          child: BottomNavigationBar(
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(
+                  FeatherIcons.camera,
+                  size: 30,
+                ),
+                label: "",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  FeatherIcons.user,
+                  size: 30,
+                ),
+                label: "",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  FeatherIcons.messageCircle,
+                  size: 30,
+                ),
+                label: "",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  FeatherIcons.bell,
+                  size: 30,
+                ),
+                label: "",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  EvaIcons.menu2Outline,
+                  size: 30,
+                ),
+                label: "",
+              ),
+            ],
+            unselectedItemColor: Colors.grey,
+            selectedItemColor: Colors.white,
+            backgroundColor: Colors.blue,
+            type: BottomNavigationBarType.fixed,
+            selectedLabelStyle: const TextStyle(
+              fontSize: 1,
+              fontFamily: 'Oxygen',
+            ),
+            showUnselectedLabels: true,
+            currentIndex: selectedIndex,
+            onTap: onItemClicked,
+          ),
+        ),
       ),
     );
   }
